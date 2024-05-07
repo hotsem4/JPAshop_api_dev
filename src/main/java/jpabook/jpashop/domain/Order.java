@@ -12,7 +12,7 @@ import java.util.List;
 
 @Entity
 @Getter @Setter
-@NoArgsConstructor(access = AccessLevel.PROTECTED)
+@NoArgsConstructor(access = AccessLevel.PROTECTED) // 빈 생성자를 protected로 만들어주는 것
 @Table(name = "orders")
 public class Order {
     @Id @GeneratedValue
